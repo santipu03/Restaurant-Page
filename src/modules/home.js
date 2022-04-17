@@ -1,9 +1,6 @@
 
 const createHomeTab = () => {
     const main = document.getElementById("main");
-    while(main.hasChildNodes()){
-        main.removeChild(main.lastChild)
-    }
 
     let intro = document.createElement("div");
     intro.classList.add("home-intro");
