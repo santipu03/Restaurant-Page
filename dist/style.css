@@ -1,0 +1,91 @@
+
+/* Variables */
+:root {
+    --black: #000;
+    --white: #fff;
+}
+
+/* Global styles */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100vh;
+}
+body {
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    
+}
+
+/* Content */
+#content {
+    position: relative;
+    height: 100%;
+    
+}
+#content::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    filter: brightness(50%);
+}
+.content-inside {
+    height: 100%;
+    position: relative;
+}
+
+/* header */
+#header {
+    height: 15%;
+    background-color: rgba(0, 0, 0, .7);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    gap: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* main */
+#main {
+    height: 77%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+/* footer */
+#footer {
+    height: 8%;
+    background-color: rgba(0, 0, 0, .7);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
