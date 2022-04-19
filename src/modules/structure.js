@@ -1,10 +1,4 @@
 
-const createContentInside = () => {
-    let contentInside = document.createElement("div");
-    contentInside.classList.add("content-inside");
-    return contentInside;
-}
-
 const createHeader = () => {
     let header = document.createElement("header");
     header.setAttribute("id","header");
@@ -54,13 +48,11 @@ const createStructure = () => {
     let header = createHeader();
     let main = createMain();
     let footer = createFooter();
-    let contentInside = createContentInside();
 
-    contentInside.appendChild(header);
-    contentInside.appendChild(main);
-    contentInside.appendChild(footer);
+    content.appendChild(header);
+    content.appendChild(main);
+    content.appendChild(footer);
 
-    content.appendChild(contentInside);
 }
 
 export default createStructure;

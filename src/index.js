@@ -8,6 +8,7 @@
 import createHomeTab from "./modules/home";
 import createStructure from "./modules/structure";
 import createContactTab from "./modules/contact";
+import createMenuTab from "./modules/menu";
 
 
 const clearContent = () => {
@@ -28,15 +29,15 @@ const setEventListeners = () => {
         createHomeTab();
     });
     //
-    
+    menuBtn.addEventListener("click", () => {
+        clearContent();
+        createMenuTab();
+    })
     //
     contactBtn.addEventListener("click", () => {
         clearContent();
         createContactTab();
     });
-
-
-
 }
 
 window.addEventListener("load", () => {
