@@ -1,6 +1,5 @@
 
 // TO-DO list:
-//   - create menu display when clicking menu tab
 //   - make the buttons move up a little when hovering and add a line at their bottom when active
 
 
@@ -28,12 +27,12 @@ const setEventListeners = () => {
         clearContent();
         createHomeTab();
     });
-    //
+    
     menuBtn.addEventListener("click", () => {
         clearContent();
         createMenuTab();
     })
-    //
+    
     contactBtn.addEventListener("click", () => {
         clearContent();
         createContactTab();

@@ -63,6 +63,13 @@ body::before {
     user-select: none;
     cursor: pointer;
 }
+.tab {
+    transition: transform .3s;
+}
+.tab:hover {
+    transform: translateY(-12%);
+}
+
 
 /* main */
 #main {
